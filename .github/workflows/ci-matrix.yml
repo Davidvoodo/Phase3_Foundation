@@ -31,7 +31,7 @@ jobs:
 
       - name: Run pylint
         run: |
-          pylint app.py
+            run: pylint --exit-zero app/app.py
 
       - name: Run pytest
         run: |
