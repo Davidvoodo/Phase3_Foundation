@@ -25,13 +25,13 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
+        working-directory: app
         run: |
           python -m pip install --upgrade pip
-          pip install -r app/requirements-dev.txt
+          pip install -r requirements-dev.txt
 
       - name: Run pylint
-        run: |
-            run: pylint --exit-zero app/app.py
+        run: pylint --exit-zero app.py
 
       - name: Run pytest
         run: |
