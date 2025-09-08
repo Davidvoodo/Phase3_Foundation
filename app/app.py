@@ -7,7 +7,7 @@ APP_VERSION = "1.0.1"
 
 @app.route('/')
 def home():
-    return jsonify({"message": f"Hello from Helm chart! (version {APP_VERSION})"})
+    return jsonify({"message": f"Hello from Helm chart!!!! (version {APP_VERSION})"})
 
 
 @app.route('/health')
