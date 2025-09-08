@@ -48,7 +48,6 @@ jobs:
       - name: Build Docker image
         run: docker build -t my-flask-app:latest .
 
-  # דוגמה לשלב Deploy אופציונלי - למי שרוצה להעלות ל-Docker Hub
   deploy:
     name: Deploy to DockerHub
     runs-on: ubuntu-latest
