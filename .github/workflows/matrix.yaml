@@ -13,16 +13,16 @@ jobs:
       MYVAR: "Hello, World!"
     strategy:
       matrix:
-        python: [3.9, 3.12, 3.11]
         os: [ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.10", "3.11"]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: show var
         run: |
           echo ${{ env.MYVAR }}
-      - name: Setup Python
-        uses: actions/setup-python@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
       - name: Install dependencies
