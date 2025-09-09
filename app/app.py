@@ -1,5 +1,5 @@
 """
-Simple Flask Application with health and version endpoints.
+Simple Flask application with health and version endpoints.
 """
 
 from flask import Flask, jsonify
