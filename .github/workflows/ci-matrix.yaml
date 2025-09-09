@@ -3,6 +3,7 @@ name: CI - Matrix Lint & Test
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   lint-test:
