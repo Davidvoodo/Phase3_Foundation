@@ -53,7 +53,6 @@ jobs:
         uses: actions/checkout@v4
 
 
-      - name: Deploy with Helm
-        run: |
-          echo "Deploying with Helm..."
-          helm upgrade --install simple-app ./mychart --namespace default
+      - name: Deploy (simulation)
+        run: echo "Simulated deploy – no cluster configured"
+
