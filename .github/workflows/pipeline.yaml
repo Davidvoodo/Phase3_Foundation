@@ -48,8 +48,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # כאן אפשר להוסיף לוגיקה אמיתית לדיפלוי
-      # למשל helm install או kubectl apply
+
       - name: Deploy with Helm
         run: |
           echo "Deploying with Helm..."
